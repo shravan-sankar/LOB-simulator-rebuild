@@ -9,6 +9,8 @@
 class OrderBook {
 public:
     void addOrder(Order order);
+    void RemoveOrder(Order order);
+    void printOrderBook() const;
 
 private:
     std::map<uint64_t, std::vector<Order>, std::greater<uint64_t>> buyOrders;
